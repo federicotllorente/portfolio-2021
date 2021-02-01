@@ -1,0 +1,24 @@
+{
+  "name": "new-portfolio-2021",
+  "version": "1.0.0",
+  "description": "Portfolio 2021 by Federico Tejedor Llorente",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "javascript",
+    "html",
+    "css",
+    "git",
+    "work",
+    "project",
+    "projects",
+    "front-end",
+    "frontend",
+    "developer"
+  ],
+  "author": "Federico Tejedor Llorente",
+  "license": "ISC"
+}
