@@ -1,0 +1,73 @@
+// Colors
+$primaryColor: #ff803b
+$primaryColorWOpacity: #ff803b44 
+$darkColor: #212121
+$altDarkColor: #000000
+$midColor: #4d4d4d
+$lightColor: #adadad
+$altLightColor: #f1f1f1
+
+// Fonts
+$mainFontSize: 18px
+$h1FontSize: 60px
+$h2FontSize: 32px
+$h3FontSize: 22px
+$hugeFontSize: 150px
+$mainFontFamily: "Poppins", sans-serif
+
+*
+    margin: 0
+    padding: 0
+
+body
+    min-height: 100vh
+    background-image: linear-gradient($darkColor, $altDarkColor)
+    color: $lightColor
+    font-family: $mainFontFamily
+    font-size: $mainFontSize
+    font-weight: 500
+    line-height: $mainFontSize * 1.2
+    a
+        border-radius: 3px
+        color: $primaryColor
+        text-decoration: none
+        transition: 0.2s
+        &:hover
+            background-color: $primaryColorWOpacity
+            transition: 0.2s
+            cursor: pointer
+    h1
+        font-size: $h1FontSize
+        font-weight: 500
+    h2
+        font-size: $h2FontSize
+        font-weight: 500
+    h3
+        font-size: $h3FontSize
+        font-weight: 500
+
+.burger_menu_btn
+    padding: 30px 25px
+    margin: 0
+    display: flex
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: 2
+    // background-color: $altDarkColor
+    background-color: red
+
+.burger_menu
+    max-width: 280px
+    height: 100vh
+    position: absolute
+    right: 0
+    z-index: 3
+    // background-color: $darkColor
+    background-color: #212121c9
+    text-align: right
+    ul li
+        margin: 10px 0
+        list-style: none
+        a
+            color: $lightColor
