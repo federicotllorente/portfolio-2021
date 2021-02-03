@@ -16,6 +16,15 @@ header
         li
             margin-right: 20px
             list-style: none
+            transition: 0.2s
+            &:hover
+                transform: translate(0, -3px)
+                transition: 0.2s
+            a
+                color: $lightColor
+                &:hover
+                    color: $altLightColor
+                    background-color: initial
             &:last-child
                 margin-right: 0
 
