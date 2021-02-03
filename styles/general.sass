@@ -20,7 +20,6 @@ $mainFontFamily: "Poppins", sans-serif
     padding: 0
 
 body
-    min-height: 100vh
     background-image: linear-gradient($darkColor, $altDarkColor)
     color: $lightColor
     font-family: $mainFontFamily
@@ -42,7 +41,7 @@ body
     h2
         font-size: $h2FontSize
         font-weight: 500
-    h3
+    h3, h4
         font-size: $h3FontSize
         font-weight: 500
 
@@ -50,7 +49,7 @@ body
     padding: 30px 25px
     margin: 0
     display: flex
-    position: absolute
+    position: fixed
     bottom: 0
     right: 0
     z-index: 2
@@ -58,16 +57,38 @@ body
     background-color: red
 
 .burger_menu
+    display: none // It changes when the class .burger_menu--showing is added
+    padding: 50px 25px
     max-width: 280px
     height: 100vh
-    position: absolute
+    box-sizing: border-box
+    position: fixed
     right: 0
     z-index: 3
-    // background-color: $darkColor
-    background-color: #212121c9
+    background-color: $darkColor
     text-align: right
+    h2
+        margin: 0 0 20px
+        color: $midColor
+    h3
+        margin: 40px 0 20px
+        color: $midColor
     ul li
         margin: 10px 0
         list-style: none
         a
             color: $lightColor
+    p
+        margin-top: 40px
+        font-size: 15px
+        color: $midColor
+    &__close_btn
+        padding: 30px 25px
+        margin: 0
+        display: flex
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 4
+    &--showing // It must be added to the element #burger_menu
+        display: initial // Shows the Burger menu

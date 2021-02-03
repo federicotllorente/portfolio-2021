@@ -1,13 +1,31 @@
 @import general.sass
 
-.mainTitle
-    h2
-        font-size: $hugeFontSize
-        line-height: 150px
-        span
-            font-weight: 600
-            color: $primaryColor
+.wrapper
+    padding: 50px 100px
+    min-height: 100vh
+    box-sizing: border-box
+    background-color: $altDarkColor
+    background-image: url(../img/main_photo3.png)
+    background-size: auto 100vh
+    background-position: right bottom
+    background-repeat: no-repeat
 
-.tagline
-    h1
-        font-size: $mainFontSize
+header
+    ul
+        display: flex
+        li
+            margin-right: 20px
+            list-style: none
+            &:last-child
+                margin-right: 0
+
+.mainTitle h2
+    margin: 40px 0 40px -10px
+    font-size: $hugeFontSize
+    line-height: 150px
+    span
+        font-weight: 600
+        color: $primaryColor
+
+.tagline h1
+    font-size: $mainFontSize
