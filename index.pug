@@ -6,39 +6,7 @@ html
         title Portfolio – Federico Tejedor Llorente
         link(rel="stylesheet", href="styles/homepage.css")
     body
-        #burger_menu_btn.burger_menu_btn(onclick="openAndCloseBurgerMenu()")
-            svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 30 23")
-                defs
-                g(id="Group_2", data-name="Group 2", transform="translate(-1069.5 92)")
-                    path(id="Line_1", data-name="Line 1", class="cls-1", transform="translate(1069.5 -90.5)", d="M0 0h30")
-                    path(id="Line_2", data-name="Line 2", class="cls-1", transform="translate(1069.5 -80.5)", d="M0 0h30")
-                    path(id="Line_3", data-name="Line 3", class="cls-1", transform="translate(1069.5 -70.5)", d="M0 0h30")
-        #burger_menu.burger_menu
-            h2 Menu
-            ul
-                li
-                    a(href="#") Portfolio
-                li
-                    a(href="#") About me
-                li
-                    a(href="#") Contact
-            h3 Find me on
-            ul
-                li
-                    a(href="#") GitHub
-                li
-                    a(href="#") Instagram
-                li
-                    a(href="#") LinkedIn
-                li
-                    a(href="#") Behance
-            p Copyright Federico Tejedor Llorente &copy; 2021#[br]All rights reserved
-            #burger_menu__close_btn.burger_menu__close_btn(onclick="openAndCloseBurgerMenu()")
-                svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 22.121 22.121")
-                    defs
-                    g(id="Close_Menu_BTN", data-name="Close Menu BTN", transform="translate(-1743.439 -761.439)")
-                        path(id="Line_4", data-name="Line 4", class="cls-1", transform="translate(1744.5 762.5)", d="M0 0l20 20")
-                        path(id="Line_5", data-name="Line 5", class="cls-1", transform="translate(1744.5 762.5)", d="M20 0L0 20")
+        include components/burger_menu.pug
         .wrapper
             header
                 ul
@@ -55,5 +23,5 @@ html
                         span a Developer
             .tagline
                 h1 Front-end Developer &amp; Web Designer
-        script(src="burger_menu.js")
-        script(src="index.js")
+        script(src="js/burger_menu.js")
+        script(src="js/index.js")
