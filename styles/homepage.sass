@@ -11,6 +11,8 @@
     background-repeat: no-repeat
 
 header
+    animation-name: titleAppears
+    animation-duration: 3s
     ul
         display: flex
         li
@@ -20,21 +22,62 @@ header
             &:hover
                 transform: translate(0, -3px)
                 transition: 0.2s
+            &:last-child
+                margin-right: 0
             a
                 color: $lightColor
                 &:hover
                     color: $altLightColor
                     background-color: initial
-            &:last-child
-                margin-right: 0
 
-.mainTitle h2
+.mainTitle
     margin: 40px 0 40px -10px
-    font-size: $hugeFontSize
-    line-height: 150px
-    span
-        font-weight: 600
-        color: $primaryColor
+    animation-name: titleAppears
+    animation-duration: 2s
+    h2
+        font-size: $hugeFontSize
+        line-height: 150px
+        span
+            font-weight: 600
+            color: $primaryColor
+            .noOrange
+                color: $lightColor
+                font-weight: 500
 
-.tagline h1
-    font-size: $mainFontSize
+.tagline
+    animation-name: titleAppears
+    animation-duration: 4s
+    h1
+        font-size: $mainFontSize
+
+.changingSpan
+    animation-name: changingSpan
+    animation-duration: 0.5s
+
+.changingSpan2
+    animation-name: changingSpan2
+    animation-duration: 0.5s
+
+// Animations
+@keyframes titleAppears
+    0%
+        margin-left: -110px
+        opacity: 0
+    75%
+        margin-left: -110px
+        opacity: 0
+    100%
+        margin-left: -10px
+        opacity: 1
+
+@keyframes changingSpan
+    0%
+        opacity: 1
+    100%
+        opacity: 0
+
+@keyframes changingSpan2
+    0%
+        opacity: 0
+    100%
+        opacity: 1

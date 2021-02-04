@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/homepage.css">
   </head>
   <body>
-    <div class="burger_menu_btn" id="burger_menu_btn">
+    <div class="burger_menu_btn" id="burger_menu_btn" onclick="openAndCloseBurgerMenu()">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 23">
         <defs></defs>
         <g id="Group_2" data-name="Group 2" transform="translate(-1069.5 92)">
@@ -32,7 +32,7 @@
         <li><a href="#">Behance</a></li>
       </ul>
       <p>Copyright Federico Tejedor Llorente &copy; 2021<br>All rights reserved</p>
-      <div class="burger_menu__close_btn" id="burger_menu__close_btn">
+      <div class="burger_menu__close_btn" id="burger_menu__close_btn" onclick="openAndCloseBurgerMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.121 22.121">
           <defs></defs>
           <g id="Close_Menu_BTN" data-name="Close Menu BTN" transform="translate(-1743.439 -761.439)">
@@ -51,11 +51,13 @@
         </ul>
       </header>
       <div class="mainTitle">
-        <h2>Hey,<br>I'm<br><span>Federico</span></h2>
+        <h2>Hey,<br>I'm<br><span id="mainTitle__span" onmouseover="changeSpanText()" onmouseleave="changeSpanTextAgain('Federico')">Federico</span></h2>
       </div>
       <div class="tagline">
         <h1>Front-end Developer &amp; Web Designer</h1>
       </div>
     </div>
+    <script src="burger_menu.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

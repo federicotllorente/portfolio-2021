@@ -41,8 +41,7 @@ body h3, body h4 {
   stroke-width: 3px;
 }
 
-.burger_menu_btn svg {
-  width: 30px;
+.burger_menu_btn {
   padding: 30px 25px;
   margin: 0;
   display: flex;
@@ -51,29 +50,35 @@ body h3, body h4 {
   right: 0;
   z-index: 2;
   background-color: #000000;
+  transition: 0.2s;
+}
+.burger_menu_btn svg {
+  width: 30px;
 }
 .burger_menu_btn svg .cls-1 {
   transition: 0.2s;
 }
-.burger_menu_btn svg:hover {
+.burger_menu_btn:hover {
   cursor: pointer;
+  background-color: #212121;
+  padding-right: 50px;
 }
-.burger_menu_btn svg:hover .cls-1 {
-  transition: 0.2s;
+.burger_menu_btn:hover svg .cls-1 {
   stroke: #f1f1f1;
 }
 
 .burger_menu {
-  display: none;
   padding: 50px 25px;
-  max-width: 280px;
+  width: 280px;
   height: 100vh;
   box-sizing: border-box;
   position: fixed;
-  right: 0;
+  right: -280px;
   z-index: 3;
   background-color: #212121;
   text-align: right;
+  box-shadow: 10px 0 30px 10px #212121;
+  transition: 0.3s;
 }
 .burger_menu h2 {
   margin: 0 0 20px;
@@ -99,27 +104,30 @@ body h3, body h4 {
   font-size: 15px;
   color: #4d4d4d;
 }
-.burger_menu__close_btn svg {
-  width: 20px;
-  margin: 30px 25px;
+.burger_menu__close_btn {
+  padding: 30px 25px;
   display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 4;
+  transition: 0.2s;
+}
+.burger_menu__close_btn:hover {
+  box-shadow: 10px 0 30px 10px #212121;
+  cursor: pointer;
+}
+.burger_menu__close_btn:hover svg .cls-1 {
+  stroke: #f1f1f1;
+}
+.burger_menu__close_btn svg {
+  width: 20px;
 }
 .burger_menu__close_btn svg .cls-1 {
   transition: 0.2s;
 }
-.burger_menu__close_btn svg:hover {
-  cursor: pointer;
-}
-.burger_menu__close_btn svg:hover .cls-1 {
-  transition: 0.2s;
-  stroke: #f1f1f1;
-}
 .burger_menu--showing {
-  display: initial;
+  right: 0;
 }
 
 .wrapper {
@@ -133,6 +141,10 @@ body h3, body h4 {
   background-repeat: no-repeat;
 }
 
+header {
+  animation-name: titleAppears;
+  animation-duration: 3s;
+}
 header ul {
   display: flex;
 }
@@ -145,6 +157,9 @@ header ul li:hover {
   transform: translate(0, -3px);
   transition: 0.2s;
 }
+header ul li:last-child {
+  margin-right: 0;
+}
 header ul li a {
   color: #adadad;
 }
@@ -152,12 +167,13 @@ header ul li a:hover {
   color: #f1f1f1;
   background-color: initial;
 }
-header ul li:last-child {
-  margin-right: 0;
-}
 
-.mainTitle h2 {
+.mainTitle {
   margin: 40px 0 40px -10px;
+  animation-name: titleAppears;
+  animation-duration: 2s;
+}
+.mainTitle h2 {
   font-size: 150px;
   line-height: 150px;
 }
@@ -165,7 +181,56 @@ header ul li:last-child {
   font-weight: 600;
   color: #ff803b;
 }
+.mainTitle h2 span .noOrange {
+  color: #adadad;
+  font-weight: 500;
+}
 
+.tagline {
+  animation-name: titleAppears;
+  animation-duration: 4s;
+}
 .tagline h1 {
   font-size: 18px;
+}
+
+.changingSpan {
+  animation-name: changingSpan;
+  animation-duration: 0.5s;
+}
+
+.changingSpan2 {
+  animation-name: changingSpan2;
+  animation-duration: 0.5s;
+}
+
+@keyframes titleAppears {
+  0% {
+    margin-left: -110px;
+    opacity: 0;
+  }
+  75% {
+    margin-left: -110px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: -10px;
+    opacity: 1;
+  }
+}
+@keyframes changingSpan {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes changingSpan2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -50,8 +50,7 @@ body
     stroke: $lightColor
     stroke-width: 3px
 
-.burger_menu_btn svg
-    width: 30px
+.burger_menu_btn
     padding: 30px 25px
     margin: 0
     display: flex
@@ -60,25 +59,30 @@ body
     right: 0
     z-index: 2
     background-color: $altDarkColor
-    .cls-1
-        transition: 0.2s
-    &:hover
-        cursor: pointer
+    transition: 0.2s
+    svg
+        width: 30px
         .cls-1
             transition: 0.2s
+    &:hover
+        cursor: pointer
+        background-color: $darkColor
+        padding-right: 50px
+        svg .cls-1
             stroke: $altLightColor
 
 .burger_menu
-    display: none // It changes when the class .burger_menu--showing is added
     padding: 50px 25px
-    max-width: 280px
+    width: 280px
     height: 100vh
     box-sizing: border-box
     position: fixed
-    right: 0
+    right: -280px
     z-index: 3
     background-color: $darkColor
     text-align: right
+    box-shadow: 10px 0 30px 10px $darkColor
+    transition: 0.3s
     h2
         margin: 0 0 20px
         color: $midColor
@@ -97,20 +101,22 @@ body
         margin-top: 40px
         font-size: 15px
         color: $midColor
-    &__close_btn svg
-        width: 20px
-        margin: 30px 25px
+    &__close_btn
+        padding: 30px 25px
         display: flex
         position: absolute
         bottom: 0
         right: 0
         z-index: 4
-        .cls-1
-            transition: 0.2s
+        transition: 0.2s
         &:hover
+            box-shadow: 10px 0 30px 10px $darkColor
             cursor: pointer
+            svg .cls-1
+                stroke: $altLightColor
+        svg
+            width: 20px
             .cls-1
                 transition: 0.2s
-                stroke: $altLightColor
-    &--showing // It must be added to the element #burger_menu
-        display: initial // Shows the Burger menu
+    &--showing
+        right: 0
