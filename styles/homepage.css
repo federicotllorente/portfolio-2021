@@ -59,9 +59,10 @@ body h3, body h4 {
   transition: 0.2s;
 }
 .burger_menu_btn:hover {
-  cursor: pointer;
-  background-color: #212121;
   padding-right: 50px;
+  background-color: #212121;
+  box-shadow: 0 0 30px 10px #21212179;
+  cursor: pointer;
 }
 .burger_menu_btn:hover svg .cls-1 {
   stroke: #f1f1f1;
@@ -73,7 +74,7 @@ body h3, body h4 {
   height: 100vh;
   box-sizing: border-box;
   position: fixed;
-  right: -280px;
+  right: -320px;
   z-index: 3;
   background-color: #212121;
   text-align: right;
@@ -114,7 +115,6 @@ body h3, body h4 {
   transition: 0.2s;
 }
 .burger_menu__close_btn:hover {
-  box-shadow: 10px 0 30px 10px #212121;
   cursor: pointer;
 }
 .burger_menu__close_btn:hover svg .cls-1 {
