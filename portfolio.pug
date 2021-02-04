@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Portfolio – Federico Tejedor Llorente
+        link(rel="stylesheet", href="styles/portfolio.css")
+    body
+        include components/burger_menu.pug
+        .wrapper
+            include components/header.pug
+            h1 Portfolio
+            p Also, if you want to see all my projects, feel free to visit my 
+                a(href="https://github.com/federicotllorente") GitHub
+                |  and 
+                a(href="https://www.behance.net/federicollorente") Behance
+                |  profiles!
+            .project_wrapper
+                include components/projects.pug
+        script(src="js/burger_menu.js")
+        script(src="js/index.js")

@@ -2,7 +2,7 @@
 $primaryColor: #ff803b
 $primaryColorWOpacity: #ff803b44 
 $darkColor: #212121
-$darkColorWOpacity: #21212179
+$darkColorWOpacity: #2121213b
 $altDarkColor: #000000
 $midColor: #4d4d4d
 $lightColor: #adadad
@@ -26,7 +26,6 @@ body
     font-family: $mainFontFamily
     font-size: $mainFontSize
     font-weight: 500
-    line-height: $mainFontSize * 1.2
     a
         border-radius: 3px
         color: $primaryColor
@@ -68,7 +67,7 @@ body
     &:hover
         padding-right: 50px
         background-color: $darkColor
-        box-shadow: 0 0 30px 10px $darkColorWOpacity
+        box-shadow: 0 0 20px 10px $darkColorWOpacity
         cursor: pointer
         svg .cls-1
             stroke: $altLightColor
@@ -83,7 +82,7 @@ body
     z-index: 3
     background-color: $darkColor
     text-align: right
-    box-shadow: 10px 0 30px 10px $darkColor
+    box-shadow: 10px 0 20px 10px $darkColorWOpacity
     transition: 0.3s
     h2
         margin: 0 0 20px
