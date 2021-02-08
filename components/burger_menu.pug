@@ -9,11 +9,20 @@
     h2 Menu
     ul
         li
-            a(href="portfolio.html") Portfolio
+            if currentPage == "Portfolio"
+                a(href="portfolio.html").currentPage Portfolio
+            else
+                a(href="portfolio.html") Portfolio
         li
-            a(href="#") About me
+            if currentPage == "About me"
+                a(href="about.html").currentPage About me
+            else
+                a(href="about.html") About me
         li
-            a(href="#") Contact
+            if currentPage == "Contact"
+                a(href="#").currentPage Contact
+            else
+                a(href="#") Contact
     h3 Find me on
     ul
         li

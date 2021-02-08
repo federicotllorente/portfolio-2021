@@ -16,6 +16,7 @@ $h3FontSize: 22px
 $hugeFontSize: 150px
 $mainFontFamily: "Poppins", sans-serif
 
+// Reset default styles
 *
     margin: 0
     padding: 0
@@ -45,6 +46,7 @@ body
         font-size: $h3FontSize
         font-weight: 500
 
+// SVGs
 .cls-1
     fill: none
     stroke: $lightColor
@@ -95,6 +97,8 @@ body
         list-style: none
         a
             color: $lightColor
+            &.currentPage
+                color: $altLightColor
             &:hover
                 background-color: initial
                 color: $altLightColor

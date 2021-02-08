@@ -95,6 +95,9 @@ body h3, body h4 {
 .burger_menu ul li a {
   color: #adadad;
 }
+.burger_menu ul li a.currentPage {
+  color: #f1f1f1;
+}
 .burger_menu ul li a:hover {
   background-color: initial;
   color: #f1f1f1;

@@ -180,64 +180,32 @@ header ul li a:hover {
 }
 
 .wrapper__content {
-  margin: 0 100px 100px;
+  padding: 0 100px 100px;
 }
 .wrapper__content h1 {
-  margin-left: -10px;
-  font-size: 150px;
-}
-.wrapper__content > p {
-  margin-bottom: 100px;
-}
-
-.project {
+  line-height: 72px;
   margin-bottom: 50px;
+}
+.wrapper__content h1 span {
+  color: #ff803b;
+}
+.wrapper__content .about p {
+  padding-bottom: 20px;
+}
+.wrapper__content .about__introduction {
   display: flex;
 }
-.project__image {
-  width: 400px;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
+.wrapper__content .about__introduction__text {
+  padding-right: 50px;
 }
-.project__image a img {
-  width: 400px;
-  height: auto;
-  position: absolute;
-  transition: 0.2s;
-  top: 0;
-  left: 0;
+.wrapper__content .about__introduction__text p:last-of-type {
+  padding-bottom: initial;
 }
-.project__image a img:hover {
-  width: 500px;
-  top: -50px;
-  left: -50px;
-}
-.project__image a:hover {
-  background-color: initial;
-}
-.project__content {
-  padding: 0 0 0 50px;
-}
-.project__content h2 {
-  font-size: 60px;
-}
-.project__content h2 a {
-  color: #adadad;
-}
-.project__content h2 a:hover {
-  background-color: initial;
-  color: #f1f1f1;
-}
-.project__content h3 {
-  color: #4d4d4d;
-}
-.project__content ul li {
+.wrapper__content .about__introduction__text ul li {
   list-style: none;
 }
-.project__content__technologies {
-  padding: 20px 0 0;
-}
-.project__content__ux {
-  padding: 20px 0 20px;
+.wrapper__content .about__content {
+  padding: 50px 0 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
