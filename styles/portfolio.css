@@ -132,6 +132,24 @@ body h3, body h4 {
   right: 0;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .burger_menu {
+    padding: 25px;
+  }
+  .burger_menu h2 {
+    margin: 0 0 10px;
+  }
+  .burger_menu h3 {
+    margin: 20px 0 10px;
+  }
+  .burger_menu p {
+    margin-top: 20px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;

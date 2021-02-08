@@ -10,11 +10,17 @@ $altLightColor: #f1f1f1
 
 // Fonts
 $mainFontSize: 18px
+$mobileFontSize: 15px
 $h1FontSize: 60px
 $h2FontSize: 32px
 $h3FontSize: 22px
 $hugeFontSize: 150px
 $mainFontFamily: "Poppins", sans-serif
+
+// Breakpoints
+$breakpointMobile: 425px
+$breakpointTablet: 768px
+$breakpointDesktop: 1024px
 
 // Reset default styles
 *
@@ -124,3 +130,17 @@ body
                 transition: 0.2s
     &--showing
         right: 0
+
+// Tablet version
+
+@media (max-width: $breakpointTablet)
+    body
+        font-size: $mobileFontSize
+    .burger_menu
+        padding: 25px
+        h2
+            margin: 0 0 10px
+        h3
+            margin: 20px 0 10px
+        p
+            margin-top: 20px
