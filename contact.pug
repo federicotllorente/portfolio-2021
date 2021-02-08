@@ -1,0 +1,46 @@
+-var currentPage = "Contact"
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Contact – Federico Tejedor Llorente
+        link(rel="stylesheet", href="styles/contact.css")
+    body
+        include components/burger_menu.pug
+        .wrapper
+            include components/header.pug
+            .wrapper__content
+                h1
+                    span
+                        | Let’s 
+                        strong work together
+                        | !
+                    |  I’d really like to help you
+                .contact
+                    .contact__text
+                        h2 Contact me
+                        p I always want to help people to solve real business problems, and make strong connections to work together whenever is necessary. I’m open to freelance opportunities, medium or large projects as well.
+                        p Feel free to contact me and tell me about your project or company. I would like to hear from you!
+                        p
+                            | You can email me at 
+                            a(href="mailto:hello@federicotllorente.work") hello@federicotllorente.work
+                            | , or simply complete the contact form. And id you wish, you can reach me out on my Social media as well:
+                        ul
+                            li
+                                | –
+                                a(href="#") Instagram
+                            li
+                                | –
+                                a(href="#") LinkedIn
+                            li
+                                | –
+                                a(href="#") Behance
+                        p Let’s make something special!
+                    .contact__form
+                        input(type="text", placeholder="Name")
+                        input(type="email", placeholder="Email")
+                        textarea(placeholder="Message")
+                        input(type="submit", value="SEND")
+        script(src="js/burger_menu.js")
+        script(src="js/index.js")
