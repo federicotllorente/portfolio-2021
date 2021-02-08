@@ -1,2 +1,49 @@
 @import header.sass
 
+.wrapper__content
+    margin: 0 100px 100px
+    h1
+        margin-left: -10px
+        font-size: $hugeFontSize
+    > p
+        margin-bottom: 100px
+
+.project
+    margin-bottom: 50px
+    display: flex
+    &__image
+        width: 400px
+        height: 500px
+        position: relative
+        overflow: hidden
+        a
+            img
+                width: 400px
+                height: auto
+                position: absolute
+                transition: 0.2s
+                top: 0
+                left: 0
+                &:hover
+                    width: 500px
+                    top: -50px
+                    left: -50px
+            &:hover
+                background-color: initial
+    &__content
+        padding: 0 0 0 50px
+        h2
+            font-size: $h1FontSize
+            a
+                color: $lightColor
+                &:hover
+                    background-color: initial
+                    color: $altLightColor
+        h3
+            color: $midColor
+        ul li
+            list-style: none
+        &__technologies
+            padding: 20px 0 0
+        &__ux
+            padding: 20px 0 20px

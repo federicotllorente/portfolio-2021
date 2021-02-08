@@ -1,3 +1,4 @@
+-var currentPage = "Portfolio"
 doctype html
 html
     head
@@ -9,13 +10,14 @@ html
         include components/burger_menu.pug
         .wrapper
             include components/header.pug
-            h1 Portfolio
-            p Also, if you want to see all my projects, feel free to visit my 
-                a(href="https://github.com/federicotllorente") GitHub
-                |  and 
-                a(href="https://www.behance.net/federicollorente") Behance
-                |  profiles!
-            .project_wrapper
-                include components/projects.pug
+            .wrapper__content
+                h1 Portfolio
+                p Also, if you want to see all my projects, feel free to visit my 
+                    a(href="https://github.com/federicotllorente") GitHub
+                    |  and 
+                    a(href="https://www.behance.net/federicollorente") Behance
+                    |  profiles!
+                .project_wrapper
+                    include components/projects.pug
         script(src="js/burger_menu.js")
         script(src="js/index.js")

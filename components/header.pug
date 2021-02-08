@@ -1,14 +1,24 @@
 header
     .logo
         h2
-            span Federico
-            | #[br]Tejedor#[br]
-            span Llorente
+            a(href="index.html")
+                span Federico
+                | #[br]Tejedor#[br]
+                span Llorente
         h1 Front-end Developer &amp;#[br]Web Designer
     ul
         li
-            a(href="portfolio.html") Portfolio
+            if currentPage == "Portfolio"
+                a(href="portfolio.html").currentPage Portfolio
+            else
+                a(href="portfolio.html") Portfolio
         li
-            a(href="#") About me
+            if currentPage == "About me"
+                a(href="#").currentPage About me
+            else
+                a(href="#") About me
         li
-            a(href="#") Contact
+            if currentPage == "Contact"
+                a(href="#").currentPage Contact
+            else
+                a(href="#") Contact

@@ -143,6 +143,10 @@ header .logo h2 {
   line-height: 32px;
   margin-right: 50px;
 }
+header .logo h2 a {
+  color: #adadad;
+  background-color: initial;
+}
 header .logo h2 span {
   color: #ff803b;
 }
@@ -164,7 +168,73 @@ header ul li:hover {
 header ul li a {
   color: #adadad;
 }
+header ul li a.currentPage {
+  color: #f1f1f1;
+}
 header ul li a:hover {
   color: #f1f1f1;
   background-color: initial;
+}
+
+.wrapper__content {
+  margin: 0 100px 100px;
+}
+.wrapper__content h1 {
+  margin-left: -10px;
+  font-size: 150px;
+}
+.wrapper__content > p {
+  margin-bottom: 100px;
+}
+
+.project {
+  margin-bottom: 50px;
+  display: flex;
+}
+.project__image {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.project__image a img {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  transition: 0.2s;
+  top: 0;
+  left: 0;
+}
+.project__image a img:hover {
+  width: 500px;
+  top: -50px;
+  left: -50px;
+}
+.project__image a:hover {
+  background-color: initial;
+}
+.project__content {
+  padding: 0 0 0 50px;
+}
+.project__content h2 {
+  font-size: 60px;
+}
+.project__content h2 a {
+  color: #adadad;
+}
+.project__content h2 a:hover {
+  background-color: initial;
+  color: #f1f1f1;
+}
+.project__content h3 {
+  color: #4d4d4d;
+}
+.project__content ul li {
+  list-style: none;
+}
+.project__content__technologies {
+  padding: 20px 0 0;
+}
+.project__content__ux {
+  padding: 20px 0 20px;
 }
