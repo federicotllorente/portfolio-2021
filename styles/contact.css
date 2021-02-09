@@ -326,3 +326,42 @@ header ul li a:hover {
   background-color: #f1f1f1;
   cursor: pointer;
 }
+
+@media (max-width: 920px) {
+  .wrapper__content {
+    padding: 0 50px 50px;
+  }
+  .wrapper__content .contact__form input[type=text], .wrapper__content .contact__form input[type=email] {
+    width: 40vw;
+  }
+  .wrapper__content .contact__form textarea {
+    width: 40vw;
+    min-width: 40vw;
+    max-width: 40vw;
+  }
+}
+@media (max-width: 640px) {
+  .wrapper__content .contact {
+    flex-direction: column;
+  }
+  .wrapper__content .contact__form {
+    padding-top: 30px;
+  }
+  .wrapper__content .contact__form input[type=text], .wrapper__content .contact__form input[type=email] {
+    width: 70vw;
+  }
+  .wrapper__content .contact__form textarea {
+    width: 70vw;
+    min-width: 70vw;
+    max-width: 70vw;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper__content {
+    padding: 0 15vw 15vw;
+  }
+  .wrapper__content h1 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+}

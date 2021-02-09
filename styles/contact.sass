@@ -61,8 +61,37 @@
                     background-color: $altLightColor
                     cursor: pointer
 
-// Tablet version
-@media (max-width: $breakpointTablet)
+// Large Tablet version
+@media (max-width: $breakpointTabletLarge)
+    .wrapper__content
+        padding: 0 50px 50px
+        .contact
+            &__form
+                input[type="text"], input[type="email"]
+                    width: 40vw
+                textarea
+                    width: 40vw
+                    min-width: 40vw
+                    max-width: 40vw
+
+// Small Tablet version
+@media (max-width: $breakpointTabletSmall)
+    .wrapper__content
+        .contact
+            flex-direction: column
+            &__form
+                padding-top: 30px
+                input[type="text"], input[type="email"]
+                    width: 70vw
+                textarea
+                    width: 70vw
+                    min-width: 70vw
+                    max-width: 70vw
 
 // Mobile version
 @media (max-width: $breakpointMobile)
+    .wrapper__content
+        padding: 0 15vw 15vw
+        h1
+            font-size: $h2FontSize
+            line-height: $h2FontSize * 1.2
