@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +54,7 @@ body h3, body h4 {
 }
 .burger_menu_btn svg {
   width: 30px;
+  height: 25px;
 }
 .burger_menu_btn svg .cls-1 {
   transition: 0.2s;
@@ -69,6 +71,7 @@ body h3, body h4 {
 
 .burger_menu {
   padding: 50px 25px;
+  margin: 0;
   width: 280px;
   height: 100vh;
   box-sizing: border-box;
@@ -124,6 +127,7 @@ body h3, body h4 {
 }
 .burger_menu__close_btn svg {
   width: 20px;
+  height: 20px;
 }
 .burger_menu__close_btn svg .cls-1 {
   transition: 0.2s;
@@ -151,18 +155,18 @@ body h3, body h4 {
   }
 }
 header {
+  padding: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px;
 }
 header .logo {
   display: flex;
   align-items: center;
 }
 header .logo h2 {
-  line-height: 32px;
   margin-right: 50px;
+  line-height: 32px;
 }
 header .logo h2 a {
   color: #adadad;
@@ -179,8 +183,8 @@ header ul {
   align-items: center;
 }
 header ul li {
-  list-style: none;
   margin-left: 20px;
+  list-style: none;
   transition: 0.2s;
 }
 header ul li:hover {
@@ -197,6 +201,33 @@ header ul li a:hover {
   background-color: initial;
 }
 
+@media (max-width: 768px) {
+  header {
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header ul {
+    margin-top: 50px;
+  }
+  header ul li {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 425px) {
+  header .logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .logo h2 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  header ul {
+    display: none;
+  }
+}
 .wrapper__content {
   padding: 0 100px 100px;
 }
