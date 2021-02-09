@@ -35,8 +35,12 @@ header
                     color: $altLightColor
                     background-color: initial
 
-// Tablet version
+// Large Tablet version
+@media (max-width: $breakpointTabletLarge)
+    header
+        padding: 50px
 
+// Tablet version
 @media (max-width: $breakpointTablet)
     header
         padding: 50px
@@ -49,9 +53,9 @@ header
                 margin-right: 20px
 
 // Mobile version
-
 @media (max-width: $breakpointMobile)
     header
+        padding: 15vw
         .logo
             flex-direction: column
             align-items: flex-start

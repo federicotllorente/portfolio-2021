@@ -1,7 +1,7 @@
 @import header.sass
 
 .wrapper__content
-    margin: 0 100px 100px
+    padding: 0 100px 100px
     h1
         margin-left: -10px
         font-size: $hugeFontSize
@@ -49,10 +49,9 @@
             padding: 20px 0 20px
 
 // Tablet version
-
 @media (max-width: $breakpointTablet)
     .wrapper__content
-        margin: 0 50px 50px
+        padding: 0 50px 50px
         h1
             margin-left: 0
             font-size: $h1FontSize
@@ -77,23 +76,30 @@
             &__ux
                 padding: 10px 0 10px
 
-// Mobile version
+// Small Tablet version
+@media (max-width: $breakpointTabletSmall)
+    .project
+        flex-direction: column
+        &__content
+            padding: 20px 0 0
 
+// Mobile version
 @media (max-width: $breakpointMobile)
     .wrapper__content
+        padding: 0 15vw 15vw
         h1
             font-size: $h1FontSize * 0.8
     .project
         flex-direction: column
         &__image
-            width: 220px
-            height: 275px
+            width: 70vw
+            height: 87.5vw
             a
                 img
-                    width: 220px
+                    width: 70vw
                     &:hover
-                        width: 320px
-                        top: -50px
-                        left: -50px
+                        width: 80vw
+                        top: -5vw
+                        left: -5vw
         &__content
             padding: 20px 0 0

@@ -20,13 +20,19 @@ $mainFontFamily: "Poppins", sans-serif
 
 // Breakpoints
 $breakpointMobile: 425px
-$breakpointTablet: 768px
+$breakpointMobileLarge: 530px
+$breakpointTabletSmall: 640px
+$breakpointTablet: 820px
+$breakpointTabletLarge: 920px
 $breakpointDesktop: 1024px
 
 // Reset default styles
 *
     margin: 0
     padding: 0
+
+html
+    background-color: $altDarkColor
 
 body
     background-image: linear-gradient($darkColor, $altDarkColor)
@@ -136,7 +142,6 @@ body
         right: 0
 
 // Tablet version
-
 @media (max-width: $breakpointTablet)
     body
         font-size: $mobileFontSize
@@ -148,3 +153,13 @@ body
             margin: 20px 0 10px
         p
             margin-top: 20px
+
+// Mobile version
+@media (max-width: $breakpointMobile)
+    .burger_menu__close_btn
+        bottom: 15vh
+
+@media (max-height: 610px)
+    .burger_menu
+        p
+            display: none
