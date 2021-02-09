@@ -140,6 +140,23 @@ body h3, body h4 {
   right: 0;
 }
 
+.download_resume_btn {
+  padding: 20px 40px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  color: #adadad;
+  background-color: #212121;
+  border-radius: 0;
+  box-shadow: 10px 10px 20px 10px #2121213b;
+  text-align: center;
+}
+.download_resume_btn:hover {
+  color: #212121;
+  background-color: #ff803b;
+}
+
 @media (max-width: 820px) {
   body {
     font-size: 15px;
@@ -297,6 +314,8 @@ header ul li a:hover {
   color: #adadad;
   background-color: transparent;
   border: 2px solid #adadad;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 .wrapper__content .contact__form textarea {
   padding: 20px 40px;
@@ -312,6 +331,8 @@ header ul li a:hover {
   color: #adadad;
   background-color: transparent;
   border: 2px solid #adadad;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 .wrapper__content .contact__form input[type=submit] {
   padding: 20px 40px;
@@ -321,6 +342,8 @@ header ul li a:hover {
   color: #000000;
   background-color: #adadad;
   border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 .wrapper__content .contact__form input[type=submit]:hover {
   background-color: #f1f1f1;

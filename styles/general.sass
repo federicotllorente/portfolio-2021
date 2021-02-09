@@ -65,6 +65,7 @@ body
     stroke: $lightColor
     stroke-width: 3px
 
+// Burger Menu Button
 .burger_menu_btn
     padding: 30px 25px
     margin: 0
@@ -88,6 +89,7 @@ body
         svg .cls-1
             stroke: $altLightColor
 
+// Burger Menu
 .burger_menu
     padding: 50px 25px
     margin: 0
@@ -140,6 +142,22 @@ body
                 transition: 0.2s
     &--showing
         right: 0
+
+// Download Resume Button
+.download_resume_btn
+    padding: 20px 40px
+    position: fixed
+    bottom: 20px
+    left: 20px
+    z-index: 2
+    color: $lightColor
+    background-color: $darkColor
+    border-radius: 0
+    box-shadow: 10px 10px 20px 10px $darkColorWOpacity
+    text-align: center
+    &:hover
+        color: $darkColor
+        background-color: $primaryColor
 
 // Tablet version
 @media (max-width: $breakpointTablet)
